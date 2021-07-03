@@ -1,0 +1,429 @@
+#bg{
+  background: black;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  display: flex;  
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.amdlogo img{
+  display: flex;
+  height: 50px;
+  width: 80px;
+  margin-top: 10px;
+}
+
+.topnav a {
+  margin-right: 20px;
+  margin-left: 80px;
+  margin-top: 10px;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:20px; 
+  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color:#1a1a1a;
+  color: white;
+}
+.carousel-inner {
+  border-radius: 9px;
+}
+/* Next and previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -45px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.first-3-containers{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-right: 130px;
+  margin-top: 300px;
+
+}
+/*hovers*/
+.t1 img {
+  opacity: 0.5;
+  margin-left: 122px;
+  margin-bottom: -60px;
+  margin-top: 80px;
+}
+.t1 img:hover{
+
+opacity: 1;
+}
+.t2 img{
+  opacity: 0.5;
+  margin-left: 75px;
+}
+.t2 img:hover{
+
+opacity: 1;
+}
+.t3 img{
+  opacity: 0.5;
+  margin-left: 90px;
+}
+.t3 img:hover{
+
+opacity: 1;
+}
+
+
+.openings-1 p{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 30px;
+  font-family: 'Cairo', sans-serif;
+  margin-right: -210px;
+}
+.openings-1 h1{
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  margin-right: -145px;
+  line-height: 18px;
+}
+.openings-2 p{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 30px;
+  font-family: 'Cairo', sans-serif;
+  margin-top: 130px;
+  margin-right: -122px;
+}
+.openings-2 h1{
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  margin-right: 30px;
+  line-height: 18px;
+}
+.openings-3 p{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 30px;
+  font-family: 'Cairo', sans-serif;
+  margin-top: 130px;
+  margin-right: -50px;
+}
+
+.openings-3 h1{
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  margin-left: -173px;
+  line-height: 18px;
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .topnav{
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.amdlogo img{
+  display: flex;
+  margin-left: 0px;
+}
+
+.topnav a{
+  font-size: 16px;
+  margin-left: 10px;
+}
+.first-3-containers{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.t1 img{
+  margin-left: 165px;
+}
+.openings-1 p{
+margin-top: 70px;
+margin-right:-120px;
+}
+.openings-1 h1{
+  margin-right: -55px;
+}
+.t2 img{
+  margin-left: 165px;
+  margin-top: 120px;
+}
+.openings-2 p{
+margin-right:-120px;
+margin-top: 70px;
+}
+.openings-2 h1{
+  margin-right: 30px;
+}
+.t3 img{
+  margin-left: 165px;
+  margin-top: 120px;
+}
+.openings-3 p{
+margin-right:-120px;
+margin-top: 70px;
+}
+.openings-3 h1{
+  margin-right: -142px;
+}
+}
+@media (min-width: 768px) and (max-width: 992px){
+ .topnav{
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.first-3-containers{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.first-3-containers{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.t1 img{
+  margin-left: 275px;
+  margin-top: 80px;
+}
+.openings-1 p{
+margin-top: 70px;
+margin-right:-120px;
+}
+.openings-1 h1{
+  margin-right: -55px;
+}
+.t2 img{
+  margin-left: 275px;
+  margin-top: 200px;
+}
+.openings-2 p{
+margin-right:-120px;
+margin-top: 70px;
+}
+.openings-2 h1{
+  margin-right: 30px;
+}
+.t3 img{
+  margin-left: 275px;
+  margin-top: 200px;
+}
+.openings-3 p{
+margin-right:-120px;
+margin-top: 70px;
+}
+.openings-3 h1{
+  margin-right: -142px;
+}
+}
+@media (min-width: 992px) and (max-width: 1200px)  {
+.amdlogo img{
+  visibility: hidden;
+}
+ .topnav{
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.first-3-containers{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.t1 img{
+  margin-left: 380px;
+}
+.openings-1 p{
+margin-top: 70px;
+margin-right:-120px;
+}
+.openings-1 h1{
+  margin-right: -55px;
+}
+.t2 img{
+  margin-left: 380px;;
+  margin-top: 120px;
+}
+.openings-2 p{
+margin-right:-120px;
+margin-top: 70px;
+}
+.openings-2 h1{
+  margin-right: 31px;
+}
+.t3 img{
+  margin-left: 380px;
+  margin-top: 120px;
+}
+.openings-3 p{
+margin-right:-120px;
+margin-top: 70px;
+}
+.openings-3 h1{
+  margin-right: -142px;
+}
+}
+
+
+
+@media (min-width:1200px){
+.amdlogo img{
+  visibility: visible;
+}
+.first-3-containers{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.t1 img{
+margin-right: 60px;
+margin-left: 100px;
+margin-top: 120px;
+margin-bottom: 42px;
+}
+.openings-1 p{
+margin-right:-120px;
+margin-top: 28px;
+}
+.openings-1 h1{
+  margin-right: -55px;
+}
+.t2 img{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.openings-2 p{
+  margin-left: -48px;
+}
+.openings-2 h1{
+  margin-right: 79px;
+}
+.t3 img{
+  margin-left: 50px;
+}
+.openings-3 h1{
+  margin-right: -138px;
+}
+}
+@media (max-width:1920px){
+.t1 img{
+  margin-top: 10px;
+  margin-bottom: 95px;
+}
+.openings-3 p{
+margin-right:-170px;
+}
+.openings-3 h1{
+  margin-left: -118px;
+
+}
+
+
+}
